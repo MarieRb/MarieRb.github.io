@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+  
+  <meta name="description" content="I am a PhD candidate at IP Paris, France, working toward making AI more accessible for biology researchers and practitioners. My research interests lie at the frontier between AI, biology, and frugal computing: I hope to accelerate research in biology by lowering the (computational) resource requirement for running state of the art models and analysis techniques. Currently, I focus on the analysis of very large multi-resolution images.
+Research    Artificial intelligence workflow quantifying muscle features on Hematoxylin–Eosin stained sections reveals dystrophic phenotype amelioration upon treatment   Nature Scientific Reports         Marie Reinbigler, Jérémie Cosette, Zoheir Guesmia, Simon Jimenez, Catalin Fetita, Elisabeth Brunet &amp; Daniel Stockholm      Curriculum    PhD Candidate at IP Paris  2021 - ongoing   Member of the Parallel and Distributed Systems Group       Visiting PhD Student at EPFL  2022 - 2023   Working with Prof."><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Marie Reinbigler",
+    
+    "url": "https:\/\/username.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/username.github.io"
+  
+  
+  
+  
+}
+</script>
+
+<meta property="og:title" content="Marie Reinbigler" />
+<meta property="og:description" content="I am a PhD candidate at IP Paris, France, working toward making AI more accessible for biology researchers and practitioners. My research interests lie at the frontier between AI, biology, and frugal computing: I hope to accelerate research in biology by lowering the (computational) resource requirement for running state of the art models and analysis techniques. Currently, I focus on the analysis of very large multi-resolution images.
+Research    Artificial intelligence workflow quantifying muscle features on Hematoxylin–Eosin stained sections reveals dystrophic phenotype amelioration upon treatment   Nature Scientific Reports         Marie Reinbigler, Jérémie Cosette, Zoheir Guesmia, Simon Jimenez, Catalin Fetita, Elisabeth Brunet &amp; Daniel Stockholm      Curriculum    PhD Candidate at IP Paris  2021 - ongoing   Member of the Parallel and Distributed Systems Group       Visiting PhD Student at EPFL  2022 - 2023   Working with Prof.">
+<meta property="og:image" content="https://username.github.io/img/picture.jpg" />
+<meta property="og:url" content="https://username.github.io/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Marie Reinbigler" />
+
+  <meta name="twitter:title" content="Marie Reinbigler" />
+  <meta name="twitter:description" content="I am a PhD candidate at IP Paris, France, working toward making AI more accessible for biology researchers and practitioners. My research interests lie at the frontier between AI, biology, and frugal …">
+  <meta name="twitter:image" content="https://username.github.io/img/picture.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="generator" content="Hugo 0.68.3" />
+  <link rel="alternate" href="https://username.github.io/index.xml" type="application/rss+xml" title="Marie Reinbigler"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://username.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://username.github.io/css/project.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://username.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://username.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://username.github.io">Marie Reinbigler</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Marie Reinbigler" href="https://username.github.io">
+            <img class="avatar-img" src="https://username.github.io/img/picture.jpg" alt="Marie Reinbigler" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              
+                <h1>Marie Reinbigler</h1>
+              
+              
+                <hr class="small">
+              
+              
+                
+                  <span class="page-subheading">Welcome to my research world!</span>
+                
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+  <div role="main" class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+          <div class="">
+            <p>I am a PhD candidate at <a href="https://www.ip-paris.fr/en">IP Paris</a>, France, working toward making AI more accessible for biology researchers and practitioners.
+My research interests lie at the frontier between AI, biology, and frugal computing: I hope to accelerate research in biology by lowering the (computational) resource requirement for running state of the art models and analysis techniques.
+Currently, I focus on the analysis of very large multi-resolution images.</p>
+<h2 id="research">Research</h2>
+<ul>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span>Artificial intelligence workflow quantifying muscle features on Hematoxylin–Eosin stained sections reveals dystrophic phenotype amelioration upon treatment</span>
+        
+        </div>
+        
+        <div class="inline-project-link">
+            <spans>
+            
+                Nature Scientific Reports
+            
+            </spans>
+            <div>
+                
+                
+                    <a href="papers/MyoSOTHES.pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </a>
+                
+                
+                    <a href="https://www.nature.com/articles/s41598-022-24139-z">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                
+            </div>
+        </div>
+        
+        
+        <div class="inline-project-authors">
+            Marie Reinbigler, Jérémie Cosette, Zoheir Guesmia, Simon Jimenez, Catalin Fetita, Elisabeth Brunet &amp; Daniel Stockholm
+        </div>
+        
+        
+    </div>
+</div>
+
+</li>
+</ul>
+<h2 id="curriculum">Curriculum</h2>
+<ul>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span>PhD Candidate at <a href="https://www.ip-paris.fr/en">IP Paris</a></span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2021 - ongoing
+            </span>
+        
+        </div>
+        
+        
+        
+        <div class="inline-project-note">
+            Member of the Parallel and Distributed Systems Group
+        </div>
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span>Visiting PhD Student at <a href="https://www.epfl.ch/en/">EPFL</a></span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022 - 2023
+            </span>
+        
+        </div>
+        
+        
+        
+        <div class="inline-project-note">
+            Working with Prof. Anne-Marie Kermarrec
+        </div>
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span>MSc at <a href="https://www.ip-paris.fr/en">IP Paris</a></span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2020 - 2021
+            </span>
+        
+        </div>
+        
+        
+        
+        <div class="inline-project-note">
+            High Performance Data Analytics
+        </div>
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span>Engineering Degree at <a href="https://www.telecom-sudparis.eu/">Telecom SudParis</a></span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2018 - 2021
+            </span>
+        
+        </div>
+        
+        
+        
+        <div class="inline-project-note">
+            Ranked 1st out of 200 students
+        </div>
+        
+    </div>
+</div>
+
+</li>
+</ul>
+<h2 id="awards--funding">Awards &amp; Funding</h2>
+<p>Funding:</p>
+<ul>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span>IP Paris Excellence Scholarship (Hi! Paris/ANR IA)</span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2021
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+</ul>
+<p>Awards</p>
+<ul>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://digicosme.cnrs.fr/ceremonie-de-remise-des-prix-de-la-meilleure-production-scientifique-en-stic-du-plateau-de-saclay/">IP Paris and Paris-Saclay University</a> Best Poster Award</span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://2022.summerschool.hi-paris.fr/">Hi! Paris 2022</a> Poster Honorable Mention</span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+</ul>
+<p>Grants</p>
+<ul>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://2023.eurosys.org/">EuroSys&rsquo;23</a> Travel Grant</span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2023
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://europe.acm.org/2022-acm-europe-summer-school">ACM Europe Summer School on HPC</a> Sponsorship and Travel Grant</span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://2022.euro-par.org/">EuroPAR&rsquo;22</a> Sponsorship</span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://ss22.ihpcss.org/">IHPCSS&rsquo;22</a> Sponsorship</span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://2022.eurosys.org/">EuroSys&rsquo;22</a> Travel Grant</span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+</ul>
+<h2 id="talks--presentations">Talks &amp; Presentations</h2>
+<ul>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://2023.eurosys.org/euroDW.html">EuroSys&rsquo;23 Doctoral Workshop</a></span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2023
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://www.myology2022.org/">Myology&rsquo;22</a></span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://2022.euro-par.org/calls/phd-symposium/">Euro-Par&rsquo;22 PhD Symposium</a></span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://2022.compas-conference.fr/">Compass&rsquo;22</a></span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://sites.google.com/view/eurodw22">EuroSys&rsquo;22 Doctoral Workshop</a></span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://sites.google.com/site/rsdwinterschool/last-editions/asf-winter-school-2022?authuser=0">ASF Winter School</a></span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+</ul>
+<h2 id="service">Service</h2>
+<ul>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span><a href="https://2022.euro-par.org/">EuroPAR&rsquo;22</a> Student Volunteer</span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+</li>
+</ul>
+<h2 id="supervised-students">Supervised Students</h2>
+<ul>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span>Arthur Sabin</span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022-2023
+            </span>
+        
+        </div>
+        
+        
+        
+        <div class="inline-project-note">
+            Project Title: Combining knowledge graphs and graph-based neural networks for multi-resolution biological image classification
+        </div>
+        
+    </div>
+</div>
+
+</li>
+<li>
+<div class="inline-project">
+    <div>
+        <div class="project-title">
+        <span>Raphaëlle Thieux</span>
+        
+            <span class="inline-project-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                2022
+            </span>
+        
+        </div>
+        
+        
+        
+        <div class="inline-project-note">
+            Project Title: GNN on multi-resolution data - building and evaluation
+        </div>
+        
+    </div>
+</div>
+
+</li>
+</ul>
+
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+      
+    <div class="page-meta">
+  
+  
+  
+</div>
+
+
+  
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            <a href="https://username.github.io">Marie Reinbigler</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://username.github.io/js/main.js"></script>
+<script src="https://username.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://username.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

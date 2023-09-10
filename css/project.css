@@ -1,0 +1,103 @@
+.project {
+    margin: 2rem 0;
+    text-align: justify;
+}
+
+.project b {
+    font-size: 20px;
+}
+
+.project-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-date {
+    margin-right: 110px;
+    font-size: 0.8em;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+}
+
+.project-date svg {
+    margin-right: 0.2em;
+}
+
+.project-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-links {
+    min-width: 110px;
+    max-width: 110px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-links a {
+    margin: 0.2em;
+}
+
+@media screen and (max-width: 520px) {
+    .project-body {
+        flex-direction: column;
+    }
+
+    .project-title {
+        flex-direction: column;
+    }
+
+    .project-date {
+        margin: 0.5rem 0;
+    }
+
+    .project-links {
+        padding-left: 0;
+        margin: 0.5rem auto;
+    }
+}
+
+.inline-project-date {
+    font-size: 0.8em;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+}
+
+.inline-project-date svg {
+    margin-right: 0.2em;
+}
+
+.inline-project-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+
+.inline-project-link div {
+    display: flex;
+    flex-direction: row;
+}
+
+.inline-project-link a {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5em;
+}
+
+.inline-project-note {
+    font-size: 0.9em;
+}
+
+.inline-project-authors {
+    font-size: 0.9em;
+    font-style: italic;
+}
